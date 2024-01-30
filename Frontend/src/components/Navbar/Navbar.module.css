@@ -1,0 +1,44 @@
+.nav {
+  background-color: #4CAF50;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo img {
+  max-width: 100px; /* Adjust the logo size as needed */
+  height: 80px;
+}
+
+.leftNavList,
+.rightNavList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.leftNavList li,
+.rightNavList li {
+  margin: 0 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Style the <Link> component */
+.leftNavList a,
+.rightNavList a {
+  text-decoration: none; /* Remove underline from the links */
+  color: inherit; /* Inherit color from parent, making it white */
+}
+
+/* Hover effect for the links */
+.leftNavList li:hover,
+.rightNavList li:hover,
+.leftNavList a:hover,
+.rightNavList a:hover {
+  color: #333;
+}

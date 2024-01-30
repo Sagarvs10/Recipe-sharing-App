@@ -1,0 +1,157 @@
+/* Login.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle at 30% 107%, #007BFF, transparent 60%);
+  transform: translate(-25%, -75%) rotate(15deg);
+  opacity: 0.3;
+  z-index: 0;
+  transition: transform 0.5s ease-out, opacity 0.3s ease-out;
+}
+
+.container:hover:before {
+  transform: translate(-25%, -75%) rotate(40deg);
+  opacity: 0.1;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333333;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  z-index: 1;
+  position: relative; /* Ensure the input is positioned relative */
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  z-index: 2; /* Adjust z-index on focus to ensure it appears above other elements */
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  z-index: 1;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  z-index: 1;
+}
+
+.signupText {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.loginWith {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.google,
+.facebook,
+.twitter {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+.google {
+  background-color: #db4437;
+  color: #fff;
+}
+
+.facebook {
+  background-color: #4267b2;
+  color: #fff;
+}
+
+.twitter {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+.google:hover {
+  background-color: #c5372b;
+  transform: translateY(-2px);
+}
+
+.facebook:hover {
+  background-color: #385999;
+  transform: translateY(-2px);
+}
+
+.twitter:hover {
+  background-color: #1990db;
+  transform: translateY(-2px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signupLink {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #007BFF;
+}
+
+.signupLink a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.signupLink a:hover {
+  text-decoration: underline;
+}

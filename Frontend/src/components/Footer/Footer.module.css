@@ -1,0 +1,44 @@
+/* Footer.module.css */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0; /* Reduced padding */
+}
+
+.quickLinks {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Reduced gap */
+  margin: 5px 0; /* Reduced margin */
+}
+
+.quickLinks li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px; /* Reduced font size */
+  transition: color 0.3s;
+}
+
+.quickLinks li a:hover {
+  color: #007BFF;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px; /* Reduced gap */
+  margin: 5px 0; /* Reduced margin */
+}
+
+.icon {
+  font-size: 16px; /* Reduced icon size */
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #007BFF;
+}
